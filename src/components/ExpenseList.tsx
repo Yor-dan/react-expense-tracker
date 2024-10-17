@@ -22,7 +22,7 @@ const ExpenseList = ({ expenses, onDeleteExpense }: Props) => {
         {expenses.map((expense) => (
           <tr key={expense.id}>
             <td>{expense.description}</td>
-            <td>${expense.amount}</td>
+            <td>Rp {expense.amount}</td>
             <td>{expense.category}</td>
             <td>
               <button
@@ -36,7 +36,7 @@ const ExpenseList = ({ expenses, onDeleteExpense }: Props) => {
         ))}
         <tr>
           <td>Total</td>
-          <td colSpan={3}>${totalAmount}</td>
+          <td colSpan={3}>Rp {totalAmount}</td>
         </tr>
       </tbody>
     </table>

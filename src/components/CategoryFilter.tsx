@@ -12,7 +12,7 @@ const CategoryFilter = ({ onSelectCategory }: Props) => {
   };
 
   return (
-    <>
+    <div className='d-flex flex-column gap-2'>
       <label className="fw-semibold">Filter by Category:</label>
       <select onChange={handleSelectCategory} className="form-select">
         <option></option>
@@ -20,7 +20,7 @@ const CategoryFilter = ({ onSelectCategory }: Props) => {
           <option key={category}>{category}</option>
         ))}
       </select>
-    </>
+    </div>
   );
 };
 

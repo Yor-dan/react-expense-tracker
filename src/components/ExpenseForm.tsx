@@ -39,8 +39,8 @@ const ExpenseForm = ({ onAddExpense } : Props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="mb-3">
+    <form onSubmit={handleSubmit} className='d-flex flex-column gap-3'>
+      <div>
         <label htmlFor="desc" className="form-label fw-semibold">
           Description
         </label>
@@ -53,9 +53,9 @@ const ExpenseForm = ({ onAddExpense } : Props) => {
           required
         />
       </div>
-      <div className="mb-3">
+      <div>
         <label htmlFor="amount" className="form-label fw-semibold">
-          Amount ($)
+          Amount (Rp)
         </label>
         <input
           id="amount"
@@ -65,7 +65,7 @@ const ExpenseForm = ({ onAddExpense } : Props) => {
           className="form-control border-2"
         />
       </div>
-      <div className="mb-3">
+      <div>
         <label htmlFor="category" className="form-label fw-semibold">
           Category
         </label>

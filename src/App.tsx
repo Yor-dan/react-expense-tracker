@@ -35,13 +35,19 @@ function App() {
     : expenses;
 
   return (
-    <div className="container my-2 d-flex flex-column gap-3">
-      <ExpenseForm onAddExpense={handleAddExpense} />
-      <CategoryFilter onSelectCategory={handleSelectCategory} />
-      <ExpenseList
-        expenses={expensesToShow}
-        onDeleteExpense={handleDeleteExpense}
-      />
+    <div className="container my-2 my-lg-5">
+      <div className="row gy-4 gx-lg-5">
+        <div className="col-12 col-lg-4 d-flex flex-column gap-4">
+          <ExpenseForm onAddExpense={handleAddExpense} />
+          <CategoryFilter onSelectCategory={handleSelectCategory} />
+        </div>
+        <div className="col-12 col-lg-8">
+          <ExpenseList
+            expenses={expensesToShow}
+            onDeleteExpense={handleDeleteExpense}
+          />
+        </div>
+      </div>
     </div>
   );
 }

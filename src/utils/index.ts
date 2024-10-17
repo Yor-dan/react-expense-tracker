@@ -1,8 +1,9 @@
 // expenses categories
 export default [
+  'Clothing',
+  'Entertainment',
+  'Food & Beverage',
   'Groceries',
   'Transportation',
-  'Entertainment',
-  'Clothing',
   'Other',
 ];
